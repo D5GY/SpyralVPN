@@ -1,0 +1,15 @@
+on: [push]
+jobs:
+  tsc:
+    name: tsc
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install Node v16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - name: Install Dependencies
+        run: yarn install
+      - name: tsc
+        uses: icrawl/action-tsc@v1

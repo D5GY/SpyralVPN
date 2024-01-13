@@ -1,0 +1,17 @@
+#error {
+  height: 91vh;
+  .conr {
+    text-align: center;
+
+    p {
+      padding-bottom: 12px;
+    }
+
+    .return {
+      padding: 16px 24px 16px 24px;
+      background: $purple;
+      color: $font;
+      border-radius: 25px;
+    }
+  }
+}

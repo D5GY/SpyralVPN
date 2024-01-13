@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./Blocks/head', title) %>
+</head>
+
+<body>
+
+  <header id="header" class="header-transparent fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1><a href="/">SpyralVPN</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-item scrollto" href="/"> Home</a></li>
+          <li><a class="getstarted scrollto" href="/discord" target="_blank"> Discord</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <section id="status" class="d-flex align-items-center justify-content-center">
+
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title">
+            <h4 style="text-align: center; padding: 25px; font-weight: 700; color: #1d55a9;">Spyral Server Status</h4>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr style="text-align: center;">
+                  <th>Server Label</th>
+                  <th>OpenVPN Status</th>
+                  <th>Last Updated</th>
+                  <th>Connected Clients</th>
+                  <th>RX Bytes</th>
+                  <th>TX Bytes</th>
+                  <th>Ping To Database</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="text-align: center;">
+                  <th>Arizona, Phoenix</th>
+                  <td><span class="badge text-bg-success">Online</span></td>
+                  <td>3 days ago</td>
+                  <td>3</td>
+                  <td>1828738742883</td>
+                  <td>284192749872847</td>
+                  <td>142ms</td>
+                </tr>
+                <tr style="text-align: center;">
+                  <th>London, England</th>
+                  <td><span class="badge text-bg-success">Online</span></td>
+                  <td>3 days ago</td>
+                  <td>3</td>
+                  <td>1828738742883</td>
+                  <td>284192749872847</td>
+                  <td>142ms</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 style="text-align: center; padding: 25px; font-weight: 700; color: #1d55a9;">Last Status Update: 20
+              seconds ago</h5>
+            <!-- <a href="/" class="button" style="background: #1d55a9; border-radius: 15px; padding: 16px 24px 16px 24px; color: #ffffff;">Return Home</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <%- include('./Blocks/footer') %>
+
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="/Js/navbar.js"></script>
+
+</body>
+
+</html>

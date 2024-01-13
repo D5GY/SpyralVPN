@@ -1,0 +1,32 @@
+#footer {
+  background: $font;
+  padding: 0 0 0 0;
+  color: $fadePurple;
+  font-size: 14px;
+  background: #eff2f8;
+
+
+  .copyright {
+    text-align: center;
+    align-items: center;
+    color: $fadePurple;
+
+    p {
+      color: black;
+      font-weight: 600;
+
+      span {
+        color: $purple;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  #footer .copyright {
+    float: none;
+    text-align: center;
+    padding: 5px 0;
+  }
+}

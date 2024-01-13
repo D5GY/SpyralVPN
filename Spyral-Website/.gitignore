@@ -1,0 +1,4 @@
+node_modules
+src/config.ts
+build
+src/Public/Css/style.min.css
